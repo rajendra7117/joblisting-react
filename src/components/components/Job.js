@@ -5,7 +5,7 @@ import JobDetails from "./JobDetails";
 
 const Job = ({ job }) => {
   return (
-    <div className={`job ${job.featured ? "featured" : ""}`}>
+    <div className={`job ${job.featured ? "featured" : ""}`} data-testId="job">
       <div className="img-container">
         <img src={job.logo} alt="logo" />
       </div>

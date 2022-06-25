@@ -10,7 +10,7 @@ const Categories = ({categories}) => {
   return (
     <div className='categories'>
        
-      {categories?.map((cat, index) => <button key={index} onClick={selectCategory.bind(this, cat)}>{cat}</button>)}
+      {categories?.map((cat, index) => <button key={index} onClick={selectCategory.bind(this, cat)} data-testId={`cat1`}>{cat}</button>)}
     </div>
   )
 }

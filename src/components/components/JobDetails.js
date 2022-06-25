@@ -2,7 +2,7 @@ import React from 'react'
 
 const JobDetails = ({jobDetails}) => {
   return (
-    <div className='job-details'>
+    <div className='job-details' >
         <div className='sec-1'>
             <span>{jobDetails.company}</span>
             {jobDetails.new && (<span>New</span>)}
