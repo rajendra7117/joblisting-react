@@ -1,5 +1,3 @@
-import React from "react";
-
 const useFilter = (catArray, list) => {
   const compare = (catArray, itemFilters) => {
       let count=0
@@ -24,8 +22,9 @@ const useFilter = (catArray, list) => {
       if(compare(catArray, item.filterList)===true){
        return true
       }
+      return false
   }
-   
+
   );
 
 

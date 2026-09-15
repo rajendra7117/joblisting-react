@@ -1,4 +1,4 @@
-import React, {useEffect, useState, memo} from 'react'
+import React, {memo} from 'react'
 import Job from './Job'
 import useFilter from '../../hooks/UseFilter'
 import { useSelector } from 'react-redux'
@@ -11,7 +11,7 @@ const JobsList = ({jobs}) => {
    })
  
   
-   const {filteredList: filteredList} = useFilter(filterList, jobsList)
+   const {filteredList} = useFilter(filterList, jobsList)
   
 
   return (
